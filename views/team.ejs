@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/preloader.ejs', {now: 'team'}) %>
+    <%- themeConfig?.customHtml %>
+</head>
+
+<body class="g-sidenav-show bg-gray-100" id="scroll">
+<%- include('partials/preload.ejs') %>
+<%- include('partials/sidebar.ejs', {config: config, now:'team'}) %>
+<div class="main-content position-relative bg-gray-100 max-height-vh-100 h-100">
+    <!-- Navbar -->
+    <%- include('partials/navbar.ejs', {now:'team'}) %>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4" style="padding-bottom: 0px !important;">
+        <div id="discordRocket" style="display: none;">
+            <div id="rocketDiscord"
+                 style="position: absolute; margin: 0; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 420;">
+                <i class="fab fa-discord fa-10x" aria-hidden="true"></i>
+            </div>
+            <p style="font-size: 150%; position: absolute; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                Taking you to <b>discord.gg</b></p>
+        </div>
+        <section class="py-sm-7 py-5 position-relative" id="mainSection" style="padding-top: 0px !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1 class="text-gradient text-primary">Meet Our Team</h1>
+                        <p class="lead">Get to know the amazing team behind our product.</p>
+                    </div>
+                </div>
+                <div class="row mt-4 d-flex" style="justify-content: space-between;">
+                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
+                        <div class="p-3">
+                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
+                                 src="https://avatars.githubusercontent.com/u/66025383"
+                                 style="width: 200px; height: 200px;"
+                                 alt="Plain">
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
+                                <h2 class="text-gradient text-primary">Plain</h2>
+                                <h5 class="mt-1" style="margin-bottom: 0;">Soft UI Developer</h5>
+                                <p>Spent over 6 hours typing out all the feed icons.</p>
+                                <div style="position: absolute; bottom: 15px;">
+                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
+                                       href="https://github.com/PlainDevelopment">
+                                        Plain's Github
+                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
+                        <div class="p-3">
+                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
+                                 src="https://avatars.githubusercontent.com/u/68955155"
+                                 style="width: 200px; height: 200px;"
+                                 alt="iMidnight">
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
+                                <h2 class="text-gradient text-primary">iMidnight</h2>
+                                <h5 class="mt-1" style="margin-bottom: 0;">Soft UI Developer</h5>
+                                <p>An HTML and CSS developer walked into a bar... to style their drink with a gradient background and a perfectly centered umbrella.</p>
+                                <div style="position: absolute; bottom: 15px;">
+                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
+                                       href="https://github.com/iMidnights">
+                                        iMidnight's Github
+                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
+                        <div class="p-3">
+                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
+                                 src="https://avatars.githubusercontent.com/u/62174194"
+                                 style="width: 200px; height: 200px;"
+                                 alt="Breathtake">
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
+                                <h2 class="text-gradient text-primary">Breathtake</h2>
+                                <h5 class="mt-1" style="margin-bottom: 0;">Discord Dashboard Developer</h5>
+                                <p>Project Ants.</p>
+                                <div style="position: absolute; bottom: 15px;">
+                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
+                                       href="https://github.com/breftejk">
+                                        Breathtake's Github
+                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
+                        <div class="p-3">
+                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
+                                 src="https://avatars.githubusercontent.com/u/46864390"
+                                 style="width: 200px; height: 200px;"
+                                 alt="DJKnaeckebrot">
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
+                                <h2 class="text-gradient text-primary">DJKnaeckebrot</h2>
+                                <h5 class="mt-1" style="margin-bottom: 0;">Soft UI Developer</h5>
+                                <p>I asked CSS if it's okay to move on, it replied: 'display: block;'</p>
+                                <div style="position: absolute; bottom: 15px;">
+                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
+                                       href="https://github.com/DJKnaeckebrot">
+                                        DJKnaeckebrot's Github
+                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%
+        const images = ["curved-1", "curved-2", "curved-3", "curved-4", "curved-5", "curved-6", "curved-7", "curved-8", "curved-9", "curved-10", "curved-11", "curved-12", "curved-13", "curved-14", "curved-15", "curved-16", "curved-17", "curved-18"];
+        const image = images[Math.floor(Math.random() * images.length)];
+        %>
+        <section class="pb-7 position-relative" id="getHelp">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center mx-auto">
+                        <h1 class="text-gradient text-primary">Got a question?</h1>
+                        <p class="text-gradient text-primary">Join our Discord server!</p>
+                        <button type="button" class="btn btn-link text-grey" id="discordButton" onclick="supportServer()">
+                            <i class="fab fa-discord fa-7x" aria-hidden="true"></i>
+                            <span class="sr-only">Join our Discord server</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    let disableFunc = false;
+    var win;
+
+    function supportServer() {
+        if (disableFunc) return;
+        disableFunc = true;
+        $('#discordButton').parent().css('overflow', 'hidden');
+        $('#discordButton').animate({'margin-top': '-=50px'});
+        $('#discordButton').animate({'margin-top': '+=500px', opacity: 0}, function () {
+            $(this).hide();
+        });
+        $("#discordRocket").fadeIn();
+        setTimeout(function () {
+            $('#rocketDiscord').animate({'margin-top': '+=600px'}, 1);
+            $("#mainSection").fadeOut();
+            $("#main2").fadeOut();
+            $("#getHelp").fadeOut();
+        }, 1000)
+        setTimeout(function () {
+            setTimeout(function () {
+                $('#rocketDiscord').animate({'margin-top': '+=75px'});
+                $('#rocketDiscord').animate({'margin-top': '-=1000px'}, 1500);
+                setTimeout(function () {
+                    window.open('https://discord.gg/xampledev', '_blank', 'location=yes,height=1200,width=800');
+                    $("#rocketDiscord").fadeOut();
+                    $("#discordRocket").fadeOut();
+                    setTimeout(function () {
+                        disableFunc = false;
+                        location.reload();
+                    }, 3500)
+                }, 1200)
+            }, 1500)
+        }, 2000);
+    }
+</script>
+
+<%- include('partials/scripts.ejs', {now: "team"}) %>
+</body>
+
+</html>
