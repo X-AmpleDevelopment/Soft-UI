@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/preloader.ejs', {now: 'ab'}) %>
+    <%- themeConfig?.customHtml %>
+</head>
+
+<body class="g-sidenav-show bg-gray-100" id="scroll">
+<%- include('partials/preload.ejs') %>
+<%- include('partials/sidebar.ejs', {config: config, now:'ab'}) %>
+<div class="main-content position-relative bg-gray-100 max-height-vh-100 h-100">
+    <!-- Navbar -->
+    <%- include('partials/navbar.ejs', {now:'ab'}) %>
+    <!-- End Navbar -->
+    <section class="py-5 position-relative" id="mainSection">
+        <div class="container">
+            <div class="row mt-4 d-flex justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="card p-4">
+                        <h1 class="text-center text-gradient text-primary">About Us</h1>
+                        <p>
+                            Welcome to X-Ample Development! We are a dynamic team of developers dedicated to creating innovative and user-friendly solutions for our clients. Our mission is to deliver high-quality products that not only meet but exceed our customers' expectations.
+                        </p>
+                        <p>
+                            Founded in [Year], X-Ample Development has grown from a small startup to a trusted name in the industry. Our expertise spans various domains including web development, mobile applications, and cloud solutions. We pride ourselves on our commitment to excellence and our passion for technology.
+                        </p>
+                        <p>
+                            At X-Ample Development, we believe in the power of collaboration and continuous learning. Our team is composed of talented professionals who are always eager to embrace new challenges and stay ahead of the technological curve. We work closely with our clients to understand their unique needs and provide tailor-made solutions that drive success.
+                        </p>
+                        <p>
+                            Thank you for choosing X-Ample Development. We look forward to partnering with you on your next project!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</main>
+<%- include('partials/scripts.ejs', {now: "ab"}) %>
+</body>
+
+</html>

@@ -19,7 +19,7 @@
 <head>
     <%- include('partials/preloader.ejs', {now: 'commands'}) %>
     <script>
-        // docuemnt on read
+        // document on read
         document.addEventListener('DOMContentLoaded', function() {
             $('.glow').removeClass('active');
             $('.active_all').addClass('active');
@@ -49,9 +49,10 @@
 <%- include('partials/preload.ejs') %>
 <%- include('partials/sidebar.ejs', {config: config, now:'commands'}) %>
 <div class="main-content position-relative bg-gray-100 max-height-vh-100 h-100">
-    <!-- Navbar -->
     <%- include('partials/navbar.ejs', {now:'commands'}) %>
-    <!-- End Navbar -->
+    <div class="page-header min-height-300 border-radius-xl mt-4" style="background-image: url('https://i.imgur.com/OyxYaJ0.png'); background-position-y: 50%;">
+        <span class="mask bg-gradient-primary opacity-6"></span>
+    </div>
     <div class="container-fluid py-4">
         <div class="row">
             <div class="container-fluid">

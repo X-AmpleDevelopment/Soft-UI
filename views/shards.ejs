@@ -82,14 +82,14 @@ function hexToRgbA(hex){
 <head>
     <style>
         .unselectable {
-          -webkit-user-select: none;
-          -webkit-touch-callout: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-      </style>
-      <%- themeConfig?.customHtml %>
+    </style>
+    <%- themeConfig?.customHtml %>
 </head>
 <body class="g-sidenav-show bg-gray-100" id="scroll">
 <%- include('partials/preload.ejs') %>
@@ -98,13 +98,24 @@ function hexToRgbA(hex){
     <!-- Navbar -->
     <%- include('partials/navbar.ejs', {now:'shards'}) %>
     <!-- End Navbar -->
-    <% let image; if (themeConfig.shardspage.backgroundUrl) { image=themeConfig.shardspage.backgroundUrl } else { const images=["curved-1", "curved-2" , "curved-3" , "curved-4" , "curved-5" , "curved-6" , "curved-7"
-        , "curved-8" , "curved-9" , "curved-10" , "curved-11" , "curved-12" , "curved-13" , "curved-14"
-        , "curved-15" , "curved-16" , "curved-17" , "curved-18" ]; image="/img/curved-images/" + images[Math.floor(Math.random() *
-            images.length)]+ ".webp";} %>
+    <%
+    let image;
+    if (themeConfig.shardspage && themeConfig.shardspage.backgroundUrl) {
+        image = themeConfig.shardspage.backgroundUrl;
+    } else {
+        const images = [
+            "curved-1", "curved-2", "curved-3", "curved-4",
+            "curved-5", "curved-6", "curved-7", "curved-8",
+            "curved-9", "curved-10", "curved-11", "curved-12",
+            "curved-13", "curved-14", "curved-15", "curved-16",
+            "curved-17", "curved-18"
+        ];
+        image = "https://i.imgur.com/OyxYaJ0.png" + images[Math.floor(Math.random() * images.length)] + ".webp";
+    }
+    %>
     <div class="container-fluid">
         <div class="page-header min-height-300 border-radius-xl mt-4"
-            style="background-image: url('<%- image %>'); background-position-y: 50%;">
+             style="background-image: url('<%= image %>'); background-position-y: 50%;">
             <span class="mask bg-gradient-primary opacity-6"></span>
         </div>
         <div class="card card-body blur shadow-blur mx-4 mt-n6 overflow-hidden">
@@ -112,7 +123,7 @@ function hexToRgbA(hex){
                 <div class="col-auto">
                     <div class="avatar avatar-xl position-relative">
                         <img id="img" src="<%- themeConfig.icons.sidebar.darkUrl %>" alt="profile_image"
-                            class="w-100 border-radius-lg shadow-sm">
+                             class="w-100 border-radius-lg shadow-sm">
                     </div>
                 </div>
                 <div class="col-auto my-auto">
@@ -135,11 +146,11 @@ function hexToRgbA(hex){
                         Loading...
                    </span>
                 </div>
+            </div>
         </div>
+        <%- include('partials/footer.ejs') %>
     </div>
-    <%- include('partials/footer.ejs') %>
-</div>
-</main>
+    </main>
 </div>
 <!--  Graph Code !-->
 <%- include('partials/scripts.ejs', {now: "shards"}) %>
@@ -194,14 +205,14 @@ function hexToRgbA(hex){
                       </div>
                     `)
                     $('#shardlist').append(row.clone(true))
-                    }
-
-                if (first) {
-                    for (const shard in data) {
-                        const graph = createGraph(data[shard]);
-                        graphs[data[shard].id] = graph;
-                    }
                 }
+
+            if (first) {
+                for (const shard in data) {
+                    const graph = createGraph(data[shard]);
+                    graphs[data[shard].id] = graph;
+                }
+            }
             timeout = data[0].interval
         });
         return timeout
@@ -226,7 +237,7 @@ function hexToRgbA(hex){
 
         let ctx = document.getElementById(`chart-line-${id}`).getContext("2d");
         var gradientStroke1 = ctx.createLinearGradient(0, 230, 0, 50);
-    
+
         gradientStroke1.addColorStop(1, '<%= colone %>');
         gradientStroke1.addColorStop(0.1, '<%= gradone %>');
         gradientStroke1.addColorStop(0, '<%= gradtwo %>'); //purple colors

@@ -4,7 +4,8 @@ if (now) {
     const pages = req?.locales?.partials?.navbar?.pages;
     if (now === 'manage') currentPage = pages?.manage || "Manage Guilds";
     if (now === 'settings') currentPage = pages?.settings || "Manage Guilds";
-    if (now === 'commands') currentPage = pages?.commands || "Commands";
+    if (now === 'commands') currentPage = pages?.commands || "Commands"
+    if (now === 'ab') currentPage = pages?.ab || "About Us";
     if (now === 'pp') currentPage = pages?.pp || "Privacy Policy";
     if (now === 'admin') currentPage = pages?.admin || "Admin Panel";
     if (now === 'error') currentPage = pages?.error || "Error";
