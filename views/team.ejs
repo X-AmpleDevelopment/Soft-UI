@@ -4,6 +4,14 @@
 <head>
     <%- include('partials/preloader.ejs', {now: 'team'}) %>
     <%- themeConfig?.customHtml %>
+    <style>
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
 </head>
 
 <body class="g-sidenav-show bg-gray-100" id="scroll">
@@ -22,7 +30,7 @@
             <p style="font-size: 150%; position: absolute; margin: 0; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                 Taking you to <b>discord.gg</b></p>
         </div>
-        <section class="py-sm-7 py-5 position-relative" id="mainSection" style="padding-top: 0px !important;">
+        <section class="py-sm-7 py-5 position-relative center-content" id="mainSection" style="padding-top: 0px !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
@@ -30,101 +38,32 @@
                         <p class="lead">Get to know the amazing team behind our product.</p>
                     </div>
                 </div>
-                <div class="row mt-4 d-flex" style="justify-content: space-between;">
-                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
-                        <div class="p-3">
-                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
-                                 src="https://avatars.githubusercontent.com/u/66025383"
-                                 style="width: 200px; height: 200px;"
-                                 alt="Plain">
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
-                                <h2 class="text-gradient text-primary">Plain</h2>
-                                <h5 class="mt-1" style="margin-bottom: 0;">Soft UI Developer</h5>
-                                <p>Spent over 6 hours typing out all the feed icons.</p>
-                                <div style="position: absolute; bottom: 15px;">
-                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
-                                       href="https://github.com/PlainDevelopment">
-                                        Plain's Github
-                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                                    </a>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                        <div class="card" style="width: 320px; height: 550px; text-align: center;">
+                            <div class="p-3">
+                                <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
+                                     src="https://avatars.githubusercontent.com/u/171569440"
+                                     style="width: 200px; height: 200px;"
+                                     alt="Plain">
+                            </div>
+                            <hr>
+                            <div>
+                                <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
+                                    <h2 class="text-gradient text-primary">Danny</h2>
+                                    <h5 class="mt-1" style="margin-bottom: 0;">Lead Developer/Founder</h5>
+                                    <p>Gotta give'em a little x-ample right...?</p>
+                                    <div style="position: absolute; bottom: 15px;">
+                                        <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
+                                           href="https://github.com/x-ampledevelopment">
+                                            Danny's Github
+                                            <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
-                        <div class="p-3">
-                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
-                                 src="https://avatars.githubusercontent.com/u/68955155"
-                                 style="width: 200px; height: 200px;"
-                                 alt="iMidnight">
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
-                                <h2 class="text-gradient text-primary">iMidnight</h2>
-                                <h5 class="mt-1" style="margin-bottom: 0;">Soft UI Developer</h5>
-                                <p>An HTML and CSS developer walked into a bar... to style their drink with a gradient background and a perfectly centered umbrella.</p>
-                                <div style="position: absolute; bottom: 15px;">
-                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
-                                       href="https://github.com/iMidnights">
-                                        iMidnight's Github
-                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
-                        <div class="p-3">
-                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
-                                 src="https://avatars.githubusercontent.com/u/62174194"
-                                 style="width: 200px; height: 200px;"
-                                 alt="Breathtake">
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
-                                <h2 class="text-gradient text-primary">Breathtake</h2>
-                                <h5 class="mt-1" style="margin-bottom: 0;">Discord Dashboard Developer</h5>
-                                <p>Project Ants.</p>
-                                <div style="position: absolute; bottom: 15px;">
-                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
-                                       href="https://github.com/breftejk">
-                                        Breathtake's Github
-                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 320px; height: 550px; text-align: center;">
-                        <div class="p-3">
-                            <img class="img border-radius-100 max-width-200 w-100 position-relative z-index-2"
-                                 src="https://avatars.githubusercontent.com/u/46864390"
-                                 style="width: 200px; height: 200px;"
-                                 alt="DJKnaeckebrot">
-                        </div>
-                        <hr>
-                        <div>
-                            <div class="p-3 text-center" style="text-align: left !important; padding-top: 0 !important;">
-                                <h2 class="text-gradient text-primary">DJKnaeckebrot</h2>
-                                <h5 class="mt-1" style="margin-bottom: 0;">Soft UI Developer</h5>
-                                <p>I asked CSS if it's okay to move on, it replied: 'display: block;'</p>
-                                <div style="position: absolute; bottom: 15px;">
-                                    <a class="text-body text-bg font-weight-bold mb-0 icon-move-right"
-                                       href="https://github.com/DJKnaeckebrot">
-                                        DJKnaeckebrot's Github
-                                        <i class="fas fa-arrow-right text-sm ms-1" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <%
         const images = ["curved-1", "curved-2", "curved-3", "curved-4", "curved-5", "curved-6", "curved-7", "curved-8", "curved-9", "curved-10", "curved-11", "curved-12", "curved-13", "curved-14", "curved-15", "curved-16", "curved-17", "curved-18"];
