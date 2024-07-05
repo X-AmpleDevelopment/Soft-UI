@@ -1,5 +1,5 @@
 module.exports = {
-    page: '/privacy-policy',
+    page: '/live-status',
     execute: async (req, res, app, config, themeConfig, info) => {
         res.render('pp', {
             req,
